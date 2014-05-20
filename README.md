@@ -9,7 +9,8 @@
 ### chefやらを使うためのPC側のset up(メモメモ)
 - [Download Vagrant ](http://www.vagrantup.com/downloads.html)
     - 最新の使ったほうが事故らない気がする（berkshelfで詰まった）
-<pre>
+
+```
 $ sudo gem update --system
 $ sudo gem install bundler
 
@@ -33,14 +34,15 @@ $ berks -v
 /Users/home/.rbenv/versions/2.0.0-p0/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:126:in `require': cannot load such file -- hitimes/hitimes (LoadError)
     from /Users/okabe-m/.rbenv/versions/2.0.0-p0/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:126:in `require'
     ~~ 途中略 ~~~
-    
+
 $ sudo bundle update 
 $ berks -v
 3.1.2
 $ vagrant plugin install vagrant-omnibus
 $ vagrant plugin install vagrant-berkshelf --plugin-version=2.0.1
 $ vagrant plugin install vagrant-berkshelf --plugin-version '< 2.0' # vagrantのバージョンが1.5以下だったら、こっちらしい
-</pre>
+```
+
 
 #### 参考URL
 - [bundler - bundleコマンドにパスが通っていなかったときの対処法 - Qiita](http://qiita.com/hyshhryk/items/7e728ad57d963454b142)

@@ -1,6 +1,9 @@
 DEPENDENCIES
+  application
+    path: site-cookbooks/application
   base
     path: site-cookbooks/base
 
 GRAPH
+  application (0.1.0)
   base (0.1.0)

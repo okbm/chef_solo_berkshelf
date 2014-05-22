@@ -9,7 +9,7 @@
 ### chefやらを使うためのPC側のset up(メモメモ)
 - [Download Vagrant ](http://www.vagrantup.com/downloads.html)
     - 最新の使ったほうが事故らない気がする（berkshelfで詰まった）
-
+    
 ```
 $ sudo gem update --system
 $ sudo gem install bundler
@@ -34,7 +34,7 @@ $ berks -v
 /Users/home/.rbenv/versions/2.0.0-p0/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:126:in `require': cannot load such file -- hitimes/hitimes (LoadError)
     from /Users/okabe-m/.rbenv/versions/2.0.0-p0/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:126:in `require'
     ~~ 途中略 ~~~
-
+    
 $ sudo bundle update 
 $ berks -v
 3.1.2
@@ -43,26 +43,29 @@ $ vagrant plugin install vagrant-berkshelf --plugin-version=2.0.1
 $ vagrant plugin install vagrant-berkshelf --plugin-version '< 2.0' # vagrantのバージョンが1.5以下だったら、こっちらしい
 ```
 
+### レシピ
+```
+$ cd site-cookbooks
+$ berks cookbook base
+$ vim base/recipes/default.rb 
+
+```
 
 #### 参考URL
 - [bundler - bundleコマンドにパスが通っていなかったときの対処法 - Qiita](http://qiita.com/hyshhryk/items/7e728ad57d963454b142)
 - [bundleコマンドでCould not find bundlerエラー | それなりブログ](http://blog.kjirou.net/p/1587)
+- [chef-solo - Chefを読んで実行するための全知識 - Qiita](http://qiita.com/TsuyoshiUshio@github/items/89030baca68b05a9783d)[chef-solo - Chefを読んで実行するための全知識 - Qiita](http://qiita.com/TsuyoshiUshio@github/items/89030baca68b05a9783d)
 
 
 
 ## install
-あとで書く
 
-<table>
-<tr>
-<th>OS</th>
-<td>debian</td>
-</tr>
-<tr>
-<th>php</th>
-<td>5.5</td>
-</tr>
-<tr>
-<th>MySQL</th>
-<td>5.6</td>
-</tr>
+- debian
+- Apache
+- php
+- mysql
+- vim
+- tmux
+- tig
+- git
+- zsh

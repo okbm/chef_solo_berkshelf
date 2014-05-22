@@ -1,0 +1,6 @@
+DEPENDENCIES
+  base
+    path: site-cookbooks/base
+
+GRAPH
+  base (0.1.0)

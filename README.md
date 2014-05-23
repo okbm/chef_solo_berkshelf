@@ -55,7 +55,7 @@ $ vim base/recipes/default.rb
 - [bundler - bundleコマンドにパスが通っていなかったときの対処法 - Qiita](http://qiita.com/hyshhryk/items/7e728ad57d963454b142)
 - [bundleコマンドでCould not find bundlerエラー | それなりブログ](http://blog.kjirou.net/p/1587)
 - [chef-solo - Chefを読んで実行するための全知識 - Qiita](http://qiita.com/TsuyoshiUshio@github/items/89030baca68b05a9783d)[chef-solo - Chefを読んで実行するための全知識 - Qiita](http://qiita.com/TsuyoshiUshio@github/items/89030baca68b05a9783d)
-
+- [入門Chef Solo：17-レシピ落ち穂拾い ー run_list,ファイル分け,include_recipe - humangas's blog](http://humangas.hatenablog.jp/entry/2014/03/18/153417)
 
 
 ## install

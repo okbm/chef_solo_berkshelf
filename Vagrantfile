@@ -21,6 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :chef_solo do |chef|
       chef.run_list = ["base"]
-      chef.run_list = ["application"]
+      chef.run_list = ["application::webserver"]
+      chef.run_list = ["application::database"]
   end
 end

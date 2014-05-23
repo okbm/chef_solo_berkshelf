@@ -23,5 +23,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       chef.run_list = ["base"]
       chef.run_list = ["application::webserver"]
       chef.run_list = ["application::database"]
+      chef.run_list = ["application::programing_lang"]
   end
 end

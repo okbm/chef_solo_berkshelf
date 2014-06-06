@@ -20,9 +20,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.berkshelf.enabled = true
 
   config.vm.provision :chef_solo do |chef|
-      chef.run_list = ["base"]
-      chef.run_list = ["application::webserver"]
-      chef.run_list = ["application::database"]
-      chef.run_list = ["application::programing_lang"]
+    chef.run_list = [
+      "base",
+      "application::database",
+      "application::programing_lang",
+      "application::webserver"
+    ]
   end
 end

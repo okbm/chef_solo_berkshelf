@@ -15,3 +15,11 @@ end
         action :install
     end
 end
+
+bash "install locate" do
+    user  "root"
+    group "root"
+    code << EOC
+        sudo localedef -f UTF-8 -i ja_JP ja_JP
+    EOC
+end

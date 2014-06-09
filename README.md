@@ -69,3 +69,6 @@ $ vim base/recipes/default.rb
 - tig
 - git
 - zsh
+
+### その他
+- dotfileのセットアップをしたい

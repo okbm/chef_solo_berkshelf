@@ -19,7 +19,7 @@ end
 bash "install locate" do
     user  "root"
     group "root"
-    code << EOC
+    code <<-EOC
         sudo localedef -f UTF-8 -i ja_JP ja_JP
     EOC
 end

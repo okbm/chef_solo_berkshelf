@@ -11,3 +11,6 @@
          action :install
      end
  end
+
+ # sudo aptitude install libyaml-ruby libzlib-ruby libopenssl-ruby ruby-dev libmysqld-dev
+

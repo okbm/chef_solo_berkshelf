@@ -10,7 +10,7 @@ execute "apt-get update" do
     command "apt-get update"
 end
 
-%w{git zsh tmux curl tig make vim unzip g++}.each do |pkg|
+%w{git zsh tmux curl tig make vim unzip nkf g++}.each do |pkg|
     package pkg do
         action :install
     end

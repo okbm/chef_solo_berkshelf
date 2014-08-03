@@ -13,23 +13,8 @@
 end
 
 # phpunit
-#channels = %w{pear.phpunit.de components.ez.no pear.symfony-project.com}
-#channels.each do |chan|
-#  php_pear_channel chan do
-#    action [:discover, :update]
-#  end
-#end
-#
-#php_pear "HTTP_Request2" do
-#  preferred_state "beta"
-#  action :install
-#end
-#
-#php_pear "XML_RPC2" do
-#  action :install
-#end
-#
-#php_pear "PHPUnit" do
-#  channel "phpunit"
-#  action :install
-#end
+execute "phpunit" do
+  command "wget https://phar.phpunit.de/phpunit.phar; chmod +x phpunit.phar; mv phpunit.phar /usr/local/bin/phpunit"
+  action :run
+  not_if { ::File.exists?("/usr/local/bin/phpunit") }
+end
